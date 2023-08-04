@@ -23,10 +23,10 @@ function calculate() {
   let result;
 
   try {
-    result = eval(displayValue);
+      result = eval(displayValue);
   } catch (error) {
     result = "Error";
   }
 
-  document.getElementById("display").value = result;
+    document.getElementById("display").value = result;
 }
