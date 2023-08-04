@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+span {
+  @apply bg-red-300 text-gray-600 font-semibold py-4 px-6 rounded-lg shadow-md active:shadow-xl text-2xl;
+}

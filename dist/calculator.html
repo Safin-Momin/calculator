@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+  </head>
+  <body class="h-screen w-screen flex justify-center items-center">
+    <div class="min-h-[300px] rounded-lg bg-slate-400">
+      <div class="w-full h-36 flex justify-center items-center">
+        <input
+          type="text"
+          id="display"
+          readonly
+          class="bg-red-300 text-gray-600 caret-gray-600 w-[89%] h-5/6 rounded-lg mt-4 text-right border-none outline-none p-4 font-semibold text-2xl"
+        />
+      </div>
+      <div class="w-full h-full grid grid-cols-4 p-5 gap-5">
+        <span onclick="appendValue(7)">7</span>
+        <span onclick="appendValue(8)">8</span>
+        <span onclick="appendValue(9)">9</span>
+        <span onclick="appendValue('/')">/</span>
+        <span onclick="appendValue(4)">4</span>
+        <span onclick="appendValue(5)">5</span>
+        <span onclick="appendValue(6)">6</span>
+        <span onclick="appendValue('*')">*</span>
+        <span onclick="appendValue(1)">1</span>
+        <span onclick="appendValue(2)">2</span>
+        <span onclick="appendValue(3)">3</span>
+        <span onclick="appendValue('-')">-</span>
+        <span onclick="appendValue(0)">0</span>
+        <span onclick="appendValue('.')">.</span>
+        <span onclick="calculate()">=</span>
+        <span onclick="appendValue('+')" class="row-span-2 flex items-center"
+          >+</span
+        >
+        <span class="col-span-2 flex justify-center" onclick="clearDisplay()"
+          >C</span
+        >
+        <span></span>
+      </div>
+    </div>
+  </body>
+</html>
