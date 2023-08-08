@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.redBtn, .btn {
-  @apply bg-red-300 text-gray-600 font-semibold py-4 px-6 rounded-lg shadow-md active:shadow-xl text-center text-3xl;
+.redBtn,
+.btn {
+  @apply bg-red-300 hover:bg-red-300/80 cursor-pointer text-gray-600 font-semibold py-4 px-6 rounded-lg shadow-md active:shadow-xl text-center text-3xl;
 }
 
-.btn{
-  @apply bg-emerald-300 text-center
+.btn {
+  @apply bg-emerald-300 hover:bg-emerald-300/80 text-center;
 }
